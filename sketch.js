@@ -6,7 +6,7 @@ var PLAY=2;
 var END=3
 var START=0;
 var carSpeed=0;
-var distance=990;
+var distance=0;
 var visibility=0;
 var timer=0;
 function preload()
