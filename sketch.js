@@ -6,7 +6,7 @@ var PLAY=2;
 var END=3
 var START=0;
 var carSpeed=0;
-var distance=0;
+var distance=990;
 var visibility=0;
 var timer=0;
 function preload()
@@ -437,7 +437,7 @@ if(distance===1000)
    car1.velocityY=0;
    car2.velocityY=0;
    car3.velocityY=0;
-   track2.y=car2.y-250
+   track2.y=car2.y-150
    track2.velocityY=0;
    accelerator.velocityY=0;
    brake.velocityY=0;
@@ -453,17 +453,17 @@ if(gameState===3)
  // image(results,car2.x-635,car2.y-400,1300,700);
   if(distance===1000 && car2.y<car1.y && car2.y<car3.y )
 {
-  image(result1,car2.x-635,car2.y-400,1300,700);
+  image(result1,car2.x-635,car2.y-460,1300,700);
   image(first,car2.x-150,car2.y-300,300,370);
 }
 if(distance===1000 && car2.y>car3.y && car2.y<car1.y )
 {
-  image(result2,car2.x-635,car2.y-400,1300,700);
+  image(result2,car2.x-635,car2.y-460,1300,700);
   image(second,car2.x-150,car2.y-300,300,370);
 }
 if(distance===1000 && car2.y>car1.y && car2.y>car3.y )
 {
-  image(result3,car2.x-635,car2.y-460,708+400,508+200);
+  image(result3,car2.x-635,car2.y-460,1300,700);
   image(third,car2.x-150,car2.y-300,300,370);
 }
 }
